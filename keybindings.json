@@ -63,6 +63,28 @@
         "when": ""
     },
     {
+        // I'd like this works even in terminal
+        "key": "ctrl+x o",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        // Read above
+        "key": "ctrl+x o",
+        "command": "-workbench.action.navigateEditorGroups",
+        "when": "!terminalFocus"
+    },
+    {
+        // I'd like this works even in terminal
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        // Read above
+        "key": "ctrl+x ctrl+f",
+        "command": "-workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
         // I'd like this works even in terminal and find widegt
         "key": "alt+w",
         "command": "emacs-mcx.copyRegion",
@@ -109,27 +131,5 @@
         "key": "up",
         "command": "-emacs-mcx.isearchExit",
         "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
-    },
-    {
-        // I'd like this works even in terminal
-        "key": "ctrl+x o",
-        "command": "workbench.action.navigateEditorGroups"
-    },
-    {
-        // Read above
-        "key": "ctrl+x o",
-        "command": "-workbench.action.navigateEditorGroups",
-        "when": "!terminalFocus"
-    },
-    {
-        // I'd like this works even in terminal
-        "key": "ctrl+x ctrl+f",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        // Read above
-        "key": "ctrl+x ctrl+f",
-        "command": "-workbench.action.quickOpen",
-        "when": "!terminalFocus"
     },
 ]
