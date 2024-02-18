@@ -14,6 +14,9 @@
     "editor.suggest.showStatusBar": true,
     "editor.renderWhitespace": "all",
     "explorer.confirmDragAndDrop": false,
+    "livePreview.openPreviewTarget": "External Browser",
+    "livePreview.customExternalBrowser": "Chrome",
+    "debug.toolBarLocation": "docked",
     // Terminal/Console
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
