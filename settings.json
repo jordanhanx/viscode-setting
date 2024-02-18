@@ -1,0 +1,47 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "window.commandCenter": false,
+    "window.restoreWindows": "none",
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.showStatusBar": true,
+    "editor.renderWhitespace": "all",
+    // Terminal/Console
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.defaultLocation": "editor",
+    // Remote
+    "remote-explorer.foldersSortOrder": "alphabetical",
+    "remote.SSH.showLoginTerminal": true,
+    // Git
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    // C/C++
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--all-scopes-completion",
+        "--completion-style=detailed",
+        "--clang-tidy",
+        "--function-arg-placeholders",
+        "--fallback-style=llvm",
+        "--header-insertion-decorators",
+        "--header-insertion=iwyu",
+        "--pretty",
+    ],
+    "cmake.statusbar.visibility": "compact",
+    // Java
+    "redhat.telemetry.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    // Python
+    "python.analysis.typeCheckingMode": "basic",
+}
