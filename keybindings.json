@@ -1,0 +1,135 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        // I always click on this accidentally
+        "key": "cmd+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        // Used to exit Emacs, but I dislike it
+        "key": "ctrl+x ctrl+c",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        // I'd like this works even in terminal
+        "key": "ctrl+x k",
+        "command": "-workbench.action.closeActiveEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        // Read above
+        "key": "ctrl+x k",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        // I'd like this can close the whole editor group, like emacs
+        "key": "ctrl+x 0",
+        "command": "-workbench.action.closeEditorsInGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        // Read above
+        "key": "ctrl+x 0",
+        "command": "workbench.action.closeEditorsAndGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        // I'd like this moves (instead of copy) the current editor to down group, like emacs
+        "key": "ctrl+x 2",
+        "command": "-workbench.action.splitEditorDown",
+        "when": "!terminalFocus"
+    },
+    {
+        // Read above
+        "key": "ctrl+x 2",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        // I'd like this moves (instead of copy) the current editor to right group, like emacs
+        "key": "ctrl+x 3",
+        "command": "-workbench.action.splitEditorRight",
+        "when": "!terminalFocus"
+    },
+    {
+        // Read above
+        "key": "ctrl+x 3",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        // Swicth bewteen editor groups, like emacs
+        "key": "ctrl+x b",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": ""
+    },
+    {
+        // I'd like this works even in terminal and find widegt
+        "key": "alt+w",
+        "command": "emacs-mcx.copyRegion",
+        "when": "terminalFocus && !config.emacs-mcx.useMetaPrefixMacCmd || findWidgetVisible"
+    },
+    {
+        // Prevent the find widget to close
+        "key": "alt+w",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.useMetaPrefixMacCmd && !isComposing"
+    },
+    {
+        // I'd like this works even in terminal and find widegt
+        "key": "ctrl+w",
+        "command": "emacs-mcx.killRegion",
+        "when": "terminalFocus || findWidgetVisible"
+    },
+    {
+        // Prevent the find widget to close
+        "key": "ctrl+w",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    },
+    {
+        // I'd like this works even in terminal and find widegt
+        "key": "ctrl+y",
+        "command": "emacs-mcx.yank",
+        "when": "terminalFocus || findWidgetVisible"
+    },
+    {
+        // Prevent the find widget to close
+        "key": "ctrl+y",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    },
+    {
+        // Prevent the find widget to close
+        "key": "down",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+    },
+    {
+        // Prevent the find widget to close
+        "key": "up",
+        "command": "-emacs-mcx.isearchExit",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+    },
+    {
+        // I'd like this works even in terminal
+        "key": "ctrl+x o",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        // Read above
+        "key": "ctrl+x o",
+        "command": "-workbench.action.navigateEditorGroups",
+        "when": "!terminalFocus"
+    },
+    {
+        // I'd like this works even in terminal
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        // Read above
+        "key": "ctrl+x ctrl+f",
+        "command": "-workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+]
